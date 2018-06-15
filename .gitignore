@@ -1,20 +1,61 @@
-/Assets/Resources/ConfigDevelopment.*
-/*.app
-/*_Data
-/*.exe
-/Assets/StreamingAssets/Cfs
-/Assets/StreamingAssets/Cfs.meta
-/Assets/StartupWindow.asset
-/Assets/StartupWindow.asset.meta
+[#]*
+*~
+.~*
+
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+*.pidb
+# *.csproj
+*.unityproj
+*.booproj
+*.svd
+*.user
+*.userprefs
+*.suo
 /*.sln
 /*.csproj
-/.vs
+*.apk
+/LocalCache
 
-/Records
-/AssetBundlesLocal
-/AppBuilder
-/AppBuilderOutput.txt
-/dfz.nsp
-/dfz.nsp.*
+# Switch
+SwitchIL2CPPCache
+SwitchIL2CPPStats
+*.nspd
+*.nspd_root
+
+# Mac
+__MACOSX
+.DS_Store
+Assets/BuildReport
+BuildReport.meta
+iOS_Xcode6
+Assets/Editor/TapjoyXcodeUpdatePostBuild.log
+
+# UnityVS
+/UnityVS.*
+/Assets/UnityVS.meta
+/Assets/UnityVS
+*.DotSettings
+/.vscode
+
+/Html
+/client.bucket*
+/client-local.bucket*
+/Downloaded
+/Downloaded2
+/ModuleBuilder
+
+/Client/Assets/Resources/HIDControllerSet/HidMapping.asset
+/Client/Assets/Resources/HIDControllerSet/HidMapping.asset.meta
+/*.hash
+build.log
+/.current_version
+/i18nMessage.txt
+/Config.txt
+/KillingMessage
 /AutoRun
-/dfz
+
+/Message_*.txt
+/Scripts

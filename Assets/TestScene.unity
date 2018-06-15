@@ -118,7 +118,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 669012942}
+    m_TransformParent: {fileID: 1921256090}
     m_Modifications:
     - target: {fileID: 464154, guid: 1ff40f11e4e653d47a04071bca77c702, type: 2}
       propertyPath: m_LocalPosition.x
@@ -718,13 +718,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 9547446, guid: 1ff40f11e4e653d47a04071bca77c702, type: 2}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed by
-        Humanoid clips.\n\tTransform 'Bip001 Neck'\n\tTransform 'Bip001 Spine'\n\tTransform
-        'Bip001'\n\tTransform 'Bip001 Head'\n\tTransform 'Bip001 Neck'\n\tTransform
-        'Bip001 Spine'\n\tTransform 'Bip001'\n\tTransform 'Bip001 Pelvis'\n\tTransform
-        'Bip001 Head'\n\tTransform 'Bip001 Pelvis'\n\tand more ...\n\tFrom animation
-        clip 'WK_cavalry_sword_06_combat_walk'\n\tFrom animation clip 'WK_cavalry_sword_03_run'"
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 464154, guid: 1ff40f11e4e653d47a04071bca77c702, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 464154, guid: 1ff40f11e4e653d47a04071bca77c702, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ff40f11e4e653d47a04071bca77c702, type: 2}
@@ -785,10 +787,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52f5ba56d879f4c8a99f83b9de72e390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainChar: {fileID: 2107026148}
+  MainChar: {fileID: 1921256089}
   BlendTarget1: {fileID: 589103225}
   BlendTarget2: {fileID: 2070363460}
-  Blend: -0.26
+  Blend: 0
 --- !u!4 &669012942
 Transform:
   m_ObjectHideFlags: 0
@@ -799,11 +801,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2107026150}
+  - {fileID: 1921256090}
   - {fileID: 589103226}
   - {fileID: 2070363461}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &669012943
 Animator:
@@ -896,8 +898,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 798309655}
-  m_LocalRotation: {x: -0.0871723, y: 0.89959055, z: -0.21045254, w: -0.37262255}
-  m_LocalPosition: {x: 2.452982, y: 2.4660368, z: 2.540432}
+  m_LocalRotation: {x: -0.06353672, y: 0.9355435, z: -0.22330855, w: -0.26618555}
+  m_LocalPosition: {x: 2.5124218, y: 2.8495164, z: 3.3518646}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -930,7 +932,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1057238842
 MonoBehaviour:
@@ -1095,89 +1097,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 41.1, y: -185.1, z: 0}
---- !u!1 &1864085067
+--- !u!1 &1921256089
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1864085071}
-  - component: {fileID: 1864085070}
-  - component: {fileID: 1864085069}
-  - component: {fileID: 1864085068}
+  - component: {fileID: 1921256090}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &1864085068
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1864085067}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!135 &1864085069
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1864085067}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1864085070
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1864085067}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1864085071
+--- !u!4 &1921256090
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1864085067}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8505596, y: 0.75144166, z: 1.9230105}
+  m_GameObject: {fileID: 1921256089}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Children:
+  - {fileID: 2107026150}
+  m_Father: {fileID: 669012942}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2070363460
 GameObject:
@@ -1211,6 +1158,20 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 191354, guid: 1ff40f11e4e653d47a04071bca77c702, type: 2}
   m_PrefabInternal: {fileID: 3000749}
+--- !u!114 &2107026149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2107026148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0bd4e8f58bc7a147a29f27b969d52ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerAttack1: 0
+  TriggerDamage: 0
+  TriggerJump: 0
 --- !u!4 &2107026150 stripped
 Transform:
   m_PrefabParentObject: {fileID: 464154, guid: 1ff40f11e4e653d47a04071bca77c702, type: 2}

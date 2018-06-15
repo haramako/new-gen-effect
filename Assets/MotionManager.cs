@@ -17,12 +17,14 @@ public class MotionManager : MonoBehaviour {
 
 	Animator anim_;
 
-	public void PlayMotion(MotionParam p)
-	{
-		anim_ = MainChar.GetComponent<Animator>();
-
-		anim_.SetTrigger("Attack");
-	}
+    public void PlayMotion(MotionParam p)
+    {
+        if (Application.isPlaying)
+        {
+            anim_ = MainChar.GetComponent<Animator>();
+            this.GetComponent<Animator>().Play("Skill01");
+        }
+    }
 
 	void LateUpdate()
 	{
