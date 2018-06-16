@@ -728,6 +728,22 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 191354, guid: 1ff40f11e4e653d47a04071bca77c702, type: 2}
+      propertyPath: m_Name
+      value: Actor
+      objectReference: {fileID: 0}
+    - target: {fileID: 166796, guid: 1ff40f11e4e653d47a04071bca77c702, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 122242, guid: 1ff40f11e4e653d47a04071bca77c702, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 129076, guid: 1ff40f11e4e653d47a04071bca77c702, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ff40f11e4e653d47a04071bca77c702, type: 2}
   m_IsPrefabParent: 0
@@ -1106,7 +1122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1921256090}
   m_Layer: 0
-  m_Name: Character
+  m_Name: ActorBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

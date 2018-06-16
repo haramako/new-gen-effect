@@ -9,6 +9,9 @@ public class Marionet : MonoBehaviour
     public bool TriggerDamage;
     public bool TriggerJump;
 
+    bool prevTriggerAttack1;
+    bool prevTriggerDamage;
+
     Animator animator_;
 
     void Awake()
@@ -23,16 +26,16 @@ public class Marionet : MonoBehaviour
             return;
         }
 
-        if (TriggerAttack1)
+        if (TriggerAttack1 != prevTriggerAttack1 && TriggerAttack1)
         {
             animator_.SetTrigger("Attack1");
-            TriggerAttack1 = false;
         }
+        prevTriggerAttack1 = TriggerAttack1;
 
-        if (TriggerDamage)
+        if (prevTriggerDamage != TriggerDamage && TriggerDamage)
         {
             animator_.SetTrigger("Damage");
-            TriggerDamage = false;
         }
+        prevTriggerDamage = TriggerDamage;
     }
 }
